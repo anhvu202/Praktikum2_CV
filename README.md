@@ -18,3 +18,8 @@ In der heutigen digitalen Welt sind intuitive Benutzeroberflächen von entscheid
 - https://link.springer.com/article/10.1007/s11760-023-02626-8#Sec3
 - https://www.youtube.com/watch?v=Ia0tjqW7xKA: mit CNN (Code in der Beschreibung verlinkt)
 - https://www.kaggle.com/code/sarjit07/hand-gestures-recognition-with-opencv-and-cnn: Auch mit CNN
+
+### Datensätze
+- https://www.kaggle.com/datasets/gti-upm/leapgestrecog
+- https://www.kaggle.com/datasets/roobansappani/hand-gesture-recognition
+- https://www.kaggle.com/datasets/ritikagiridhar/2000-hand-gestures
