@@ -1,9 +1,13 @@
 import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
+import os
 
 # Laden des trainierten Modells
-model = load_model('../model/gesture_recognition_cnn.h5')
+model = load_model('C:/Users/quynh/OneDrive/Dokumente/GitHub/Praktikum2_CV/src_cnn/model/gesture_recognition_cnn_test.h5')
+
+output_dir = "test_image/fist"
+os.makedirs(output_dir, exist_ok=True)
 
 # Überprüfen der Eingabeform des Modells
 input_shape = model.input_shape[1:]  # Exclude batch size
@@ -20,7 +24,7 @@ if not cap.isOpened():
     exit()
 
 # Definition der Region of Interest (ROI)
-x, y, w, h = 400, 30, 240, 240  # Beispielwerte für das Rechteck
+x, y, w, h = 350, 30, 240, 240  # Beispielwerte für das Rechteck
 
 # Hintergrund-Subtraktor
 bg_subtractor = cv2.createBackgroundSubtractorMOG2(history=1000, varThreshold=25, detectShadows=True)
@@ -46,7 +50,7 @@ while True:
     fg_mask = bg_subtractor.apply(roi)
 
     # Schwellenwert anwenden und Morphologieoperationen anwenden
-    _, thresh = cv2.threshold(fg_mask, 27, 255, cv2.THRESH_BINARY)
+    _, thresh = cv2.threshold(fg_mask, 125, 255, cv2.THRESH_BINARY)
     kernel = np.ones((3, 3), np.uint8)
     thresh = cv2.dilate(thresh, kernel, iterations=1)
 
@@ -54,6 +58,11 @@ while True:
     processed_img = cv2.resize(thresh, (224, 224))  # Resize to 224x224
     processed_img = np.expand_dims(processed_img, axis=0)  # Add batch dimension
     processed_img = np.expand_dims(processed_img, axis=-1) # Add channel dimension
+
+    # Speichern des Eingabebildes
+    # img_save_path = os.path.join(output_dir, f"ges_{image_count}.jpg")
+    # cv2.imwrite(img_save_path, thresh)
+    # image_count += 1
 
     # Vorhersage der Handbewegung
     prediction = model.predict(processed_img)
