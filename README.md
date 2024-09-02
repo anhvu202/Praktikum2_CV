@@ -1,4 +1,10 @@
-# Praktikum2_CV: Erkennung von Handsbewegungen 
+# Projekt: Steuerung mit Handbewegungen
+Praktikum 2 Computer Vision
+Hochschule Darmstadt, SS 2024
+Prof. Dr. Elke Hergenröther
+
+### Teammitglieder: Anh Vu (1129004), Hannah Schult (1129010)
+
 ### Introduction:
 In der heutigen digitalen Welt sind intuitive Benutzeroberflächen für die Interaktion mit technologischen Geräten von entscheidender Bedeutung. Handgesten-Erkennungssysteme spielen eine Rolle bei der Schaffung der Benutzererfahrungen. Diese Technologie ermöglicht es, durch einfache Handbewegungen intuitive Aufgaben auszuführen
 
