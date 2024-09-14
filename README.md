@@ -26,9 +26,9 @@ Ziel ist es, Verfahren zu entwickeln, welche menschliche Handgesten mittels Kame
 
 - 1. Ansatz (traniertes CNN-Modell)
   - https://techvidvan.com/tutorials/hand-gesture-recognition-tensorflow-opencv/
-  - https://link.springer.com/article/10.1007/s11760-023-02626-8#Sec3
+  - Aggarwal, A., Bhutani, N., Kapur, R., Dhand, G. & Sheoran, K. (2023). Real-time hand gesture recognition using multiple deep learning architectures. Signal Image And Video Processing, 17(8), 3963–3971. https://doi.org/10.1007/s11760-023-02626-8 https://link.springer.com/article/10.1007/s11760-023-02626-8#Sec3
   - https://www.youtube.com/watch?v=Ia0tjqW7xKA: mit CNN (Code in der Beschreibung verlinkt)
   - https://www.kaggle.com/code/sarjit07/hand-gestures-recognition-with-opencv-and-cnn: Auch mit CNN
   - Datensatz: https://www.kaggle.com/datasets/sarjit07/hand-gesture-recog-dataset/data
 - 2. Ansatz (MediaPipe)
-  - (tbd)
+  - Lugaresi, C., Tang, J., Nash, H., McClanahan, C., Uboweja, E., Hays, M., Zhang, F., Chang, C., Yong, M. G., Lee, J., Chang, W., Hua, W., Georg, M. & Grundmann, M. (2019, 14. Juni). MediaPipe: A Framework for Building Perception Pipelines. arXiv.org. https://arxiv.org/abs/1906.08172
